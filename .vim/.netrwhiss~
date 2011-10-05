@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/donald/Documents'
+let g:netrw_dirhist_2='/Users/donald'
+let g:netrw_dirhist_3='/Users/donald/Documents'
+let g:netrw_dirhist_4='/Users/donald/Documents/projects'
+let g:netrw_dirhist_5='/Users/donald/Documents/projects/mammoth'
+let g:netrw_dirhist_6='/Users/donald/Documents/Scripts'
