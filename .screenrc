@@ -1,0 +1,12 @@
+#Don't show welcome
+startup_message off
+
+#Colored hardstatus line
+hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+
+#Show default bash shell
+shell -$SHELL
+
+#Start up application
+screen bash
+screen -t vim 1 vim
