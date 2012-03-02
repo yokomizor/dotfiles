@@ -5,11 +5,11 @@ syntax enable
 filetype plugin indent on
 
 "Indentation behavior by file type
-au FileType python setl sw=2 sts=2 et
+au FileType python setl sw=4 sts=4 et
 au FileType html setl sw=2 sts=2 et
-au FileType javascript setl sw=2 sts=2 et
+"au FileType javascript setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
-au FileType php setl sw=4 sts=4 et
+"au FileType php setl sw=4 sts=4 et
 
 "Highlight
 set hlsearch
@@ -35,8 +35,15 @@ set noswapfile
 "Show line numbers on the left
 set number
 
-"Shiftsel
-set selectmode=mouse,key
-set mousemodel=popup
-set keymodel=startsel,stopsel
-set selection=exclusive
+"Ignore case in the search
+set ignorecase
+
+"Disable arrow keys
+noremap <Up> <nop>
+inoremap <Up> <nop>
+noremap <Down> <nop>
+inoremap <Down> <nop>
+noremap <Left> <nop>
+inoremap <Left> <nop>
+noremap <Right> <nop>
+inoremap <Right> <nop>
