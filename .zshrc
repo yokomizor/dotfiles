@@ -1,14 +1,8 @@
 PROMPT=$'%{\e[1;31m%}%n@%m:%{\e[0m%}%~$ '
 
-if [[ -d "/opt/local/bin" ]]; then
-	export PATH=$PATH:/opt/local/bin
-fi
-
-if [[ -d "/opt/local/sbin" ]]; then
-	export PATH=$PATH:/opt/local/sbin
-fi
-
-
 if [[ -z "$TMUX" ]]; then
-	tmux
+	tmux new-session -d -s rogerio
+	tmux new-window -t rogerio:1 'alpine'
+	tmux select-window -t rogerio:0
+	tmux attach-session -t rogerio
 fi
