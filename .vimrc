@@ -47,3 +47,7 @@ noremap <Left> <nop>
 inoremap <Left> <nop>
 noremap <Right> <nop>
 inoremap <Right> <nop>
+
+"NERDTree Shortcuts
+map <F2> :NERDTreeToggle<CR>
+map <F12> :NERDTreeFromBookmark 
