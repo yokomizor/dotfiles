@@ -51,3 +51,4 @@ inoremap <Right> <nop>
 "NERDTree Shortcuts
 map <F2> :NERDTreeToggle<CR>
 map <F12> :NERDTreeFromBookmark 
+map <C-h> :LocateEdit  
