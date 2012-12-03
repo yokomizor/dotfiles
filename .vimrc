@@ -33,7 +33,7 @@ set nowritebackup
 set noswapfile
 
 "Show line numbers on the left
-set number
+set relativenumber
 
 "Ignore case in the search
 set ignorecase
