@@ -10,4 +10,5 @@ if [[ -z "$TMUX" ]]; then
 	tmux attach-session -t me
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export EDITOR=vim
