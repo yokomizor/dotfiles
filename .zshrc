@@ -1,3 +1,5 @@
+source ./.zsh/git-prompt/zshrc.sh
+
 PROMPT=$'%{\e[1;31m%}%n@%m:%{\e[0m%}%~$(git_super_status)%# '
 
 if [[ -z "$TMUX" ]]; then
@@ -7,3 +9,5 @@ if [[ -z "$TMUX" ]]; then
 	tmux select-window -t me:0
 	tmux attach-session -t me
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
