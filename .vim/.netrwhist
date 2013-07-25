@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/rogerio/Downloads/apache-tomcat-6.0.35/bin'
+let g:netrw_dirhist_2='/home/rogerio/projects/randomeal/.git'
+let g:netrw_dirhist_3='/home/rogerio/projects/turuk/backend/scripts/easyrec'
+let g:netrw_dirhist_4='/home/rogerio/projects/airu-extensions/newslettr/config'
+let g:netrw_dirhist_5='/home/rogerio'
+let g:netrw_dirhist_6='/home/rogerio/projects/hubot/node_modules'
