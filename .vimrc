@@ -15,6 +15,7 @@ au FileType scss setl sw=4 sts=4 et
 au FileType jsp setl sw=4 sts=4 et
 au FileType java setl sw=4 sts=4 et
 "au FileType php setl sw=4 sts=4 et
+au FileType coffee setl sw=2 sts=2 et
 
 "Highlight
 set hlsearch
