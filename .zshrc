@@ -10,5 +10,5 @@ if [[ -z "$TMUX" ]]; then
 	tmux attach-session -t me
 fi
 
-export PATH=$PATH:$HOME/bin$HOME/.rvm/bin
+export PATH=$PATH:$HOME/bin:$HOME/.rvm/bin
 export EDITOR=vim
