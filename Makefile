@@ -1,4 +1,4 @@
-intall:
+install:
 	cp .tmux.conf ~/
 	cp .zshrc ~/
 	cp .gemrc ~/
