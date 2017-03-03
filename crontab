@@ -1,1 +1,0 @@
-* * * * *   updatedb -l 0 -o ~/projects/ldb -U ~/projects --prunenames=".git .project .projects target .class WEB-INF/classes .sass-cache .pyc .png .gif .jpg .jpeg .psd"
