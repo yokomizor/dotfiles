@@ -4,6 +4,7 @@ WORKDIR /root
 
 RUN apt-get update && apt-get install -y \
     git \
+    ssh \
     bash-completion \
     tmux \
     vim \
@@ -12,8 +13,7 @@ RUN apt-get update && apt-get install -y \
     docker.io \
     --no-install-recommends && rm -r /var/lib/apt/lists/*
 
-ADD .tmux.conf .
-ADD .vim .
-ADD .vimrc .
+ADD root /tmp/home
+ADD entrypoint /bin/entrypoint
 
-CMD /usr/bin/tmux
+ENTRYPOINT /bin/entrypoint

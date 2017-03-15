@@ -9,12 +9,12 @@ au FileType python setl sw=4 sts=4 et
 au FileType ruby setl sw=2 sts=2 et
 au FileType erb setl sw=4 sts=4 et
 au FileType html setl sw=2 sts=2 et
-"au FileType javascript setl sw=2 sts=2 et
+au FileType javascript setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
 au FileType scss setl sw=4 sts=4 et
 au FileType jsp setl sw=4 sts=4 et
 au FileType java setl sw=4 sts=4 et
-"au FileType php setl sw=4 sts=4 et
+au FileType php setl sw=4 sts=4 et
 au FileType coffee setl sw=2 sts=2 et
 au FileType htmldjango setl sw=2 sts=2 et
 
@@ -58,8 +58,3 @@ inoremap <Right> <nop>
 
 "Shortcuts
 map <C-k> :NERDTreeFromBookmark 
-map <C-h> :LocateTab 
-map <C-j> :DBExecSQLUnderCursor<CR>
-
-let g:locateopen_database = "~/projects/ldb"
-let g:locateopen_exactly = 0
