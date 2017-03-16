@@ -58,3 +58,7 @@ inoremap <Right> <nop>
 
 "Shortcuts
 map <C-k> :NERDTreeFromBookmark 
+
+"DBExt
+let g:dbext_default_MYSQL_bin = "docker run -it --rm mysql mysql"
+let g:dbext_default_PGSQL_bin = "docker run -it --rm postgres psql"

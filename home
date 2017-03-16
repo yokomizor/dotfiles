@@ -1,7 +1,5 @@
 #!/bin/bash
-docker run -it --rm --name home \
+docker run -it --rm --name home --privileged \
 -v /var/run/docker.sock:/var/run/docker.sock \
--v ~/projects:/root/projects \
--v ~/mail:/root/mail \
--v ~/.ssh:/root/.ssh \
+-v ~/:/root \
 home
