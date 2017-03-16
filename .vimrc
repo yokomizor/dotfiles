@@ -60,5 +60,5 @@ inoremap <Right> <nop>
 map <C-k> :NERDTreeFromBookmark 
 
 "DBExt
-let g:dbext_default_MYSQL_bin = "docker run -it --rm mysql mysql"
-let g:dbext_default_PGSQL_bin = "docker run -it --rm postgres psql"
+let g:dbext_default_MYSQL_bin = "docker run -i --rm -v /tmp:/tmp -v $HOST_HOME:/root mysql mysql"
+let g:dbext_default_PGSQL_bin = "docker run -i --rm -v /tmp:/tmp -v $HOST_HOME:/root postgres psql"

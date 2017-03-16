@@ -2,4 +2,6 @@
 docker run -it --rm --name home --privileged \
 -v /var/run/docker.sock:/var/run/docker.sock \
 -v ~/:/root \
+-v /tmp:/tmp \
+-e HOST_HOME="$HOME" \
 home
