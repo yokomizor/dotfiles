@@ -4,6 +4,7 @@ WORKDIR /root
 
 RUN apt-get update && apt-get install -y \
     wget \
+    curl \
     git \
     ssh \
     bash-completion \
@@ -19,10 +20,11 @@ RUN apt-get update && apt-get install -y \
     ./hub-linux-amd64-2.3.0-pre9/install && \
     rm -r ./hub-linux-amd64-2.3.0-pre9.tgz
 
+RUN git clone -c http.sslVerify=false https://github.com/scrooloose/nerdtree.git /etc/vim/bundle/nerdtree
+RUN git clone -c http.sslVerify=false https://github.com/vim-scripts/dbext.vim /etc/vim/bundle/dbext
+
 ADD .tmux.conf /etc/tmux.conf
 ADD .vimrc /etc/vim/vimrc.local
 ADD .vim/autoload /etc/vim/autoload
-ADD .vim/doc /etc/vim/doc
-ADD .vim/plugin /etc/vim/plugin
 
 ENTRYPOINT tmux
