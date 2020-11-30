@@ -1,3 +1,0 @@
-#!/bin/bash
-#cp -R /tmp/home/. /root
-/usr/bin/tmux -f /tmp/home/.tmux.conf
