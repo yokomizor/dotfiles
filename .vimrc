@@ -59,10 +59,6 @@ inoremap <Right> <nop>
 "Shortcuts
 map <C-k> :NERDTreeFromBookmark 
 
-"DBExt
-let g:dbext_default_MYSQL_bin = "docker run -i --rm -v /tmp:/tmp -v $HOST_HOME:/root --link=home mysql mysql"
-let g:dbext_default_PGSQL_bin = "docker run -i --rm -v /tmp:/tmp -v $HOST_HOME:/root --link=home postgres psql"
-
 "NERDTree setting defaults to work around http://github.com/scrooloose/nerdtree/issues/489
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
