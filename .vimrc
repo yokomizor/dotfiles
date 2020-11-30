@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 "Syntax highlighting
 syntax enable
 
