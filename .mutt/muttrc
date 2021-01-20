@@ -1,0 +1,11 @@
+source "gpg -d ~/.mutt/credentials.gpg |"
+
+source ~/.mutt/muttrc-bindings
+source ~/.mutt/muttrc-cache
+source ~/.mutt/muttrc-gmail
+source ~/.mutt/muttrc-imap
+source ~/.mutt/muttrc-pgp
+source ~/.mutt/muttrc-smtp
+source ~/.mutt/muttrc-ssl
+source ~/.mutt/muttrc-style
+

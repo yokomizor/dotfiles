@@ -1,0 +1,9 @@
+set smtp_url = "smtp://$my_gmail_email@smtp.gmail.com:587"
+set smtp_pass = $my_gmail_pass
+
+set realname = $my_real_name
+set from = $my_gmail_email
+
+set abort_nosubject = no
+set copy = no
+
