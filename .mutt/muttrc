@@ -9,3 +9,4 @@ source ~/.mutt/muttrc-smtp
 source ~/.mutt/muttrc-ssl
 source ~/.mutt/muttrc-style
 
+auto_view text/html
