@@ -1,3 +1,4 @@
 set sidebar_visible = no
 set beep = no
+set pager_stop = yes
 
