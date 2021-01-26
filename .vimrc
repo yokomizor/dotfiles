@@ -38,6 +38,7 @@ set guioptions-=T
 set nobackup
 set nowritebackup
 set noswapfile
+set noundofile
 
 "Show line numbers on the left
 "set number
