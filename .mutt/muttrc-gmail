@@ -2,5 +2,6 @@ set folder = "imaps://imap.gmail.com:993/"
 set spoolfile = "+INBOX"
 set postponed = "+[Gmail]/Drafts"
 set record = "+[Gmail]/Sent Mail"
-set trash = "+[Gmail]/Trash"
 
+folder-hook . set trash = "+[Gmail]/Trash"
+folder-hook "+INBOX" unset trash
