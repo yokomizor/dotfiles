@@ -65,3 +65,20 @@ let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeGlyphReadOnly = "RO"
+
+"Edit gpg files
+augroup encrypted
+  au!
+  autocmd BufReadPre,FileReadPre *.gpg
+    \ setlocal bin
+  autocmd BufReadPost,FileReadPost *.gpg
+    \ execute "'[,']!gpg --decrypt --default-recipient-self --quiet" |
+    \ setlocal nobin |
+    \ execute "doautocmd BufReadPost " . expand("%:r")
+  autocmd BufWritePre,FileWritePre *.gpg
+    \ setlocal bin |
+    \ '[,']!gpg --encrypt --default-recipient-self --quiet
+  autocmd BufWritePost,FileWritePost *.gpg
+    \ silent u |
+    \ setlocal nobin
+augroup END
