@@ -1,5 +1,6 @@
 source "gpg -d ~/.mutt/credentials.gpg |"
 
+source ~/.mutt/muttrc-aliases
 source ~/.mutt/muttrc-bindings
 source ~/.mutt/muttrc-cache
 source ~/.mutt/muttrc-gmail
