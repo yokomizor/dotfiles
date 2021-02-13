@@ -1,0 +1,17 @@
+auto-reload no
+reload-time 120
+reload-threads 4
+download-retries 4
+download-timeout 10
+prepopulate-query-feeds yes
+
+text-width 80
+
+unbind-key j
+unbind-key k
+
+bind-key j down
+bind-key k up
+
+feedlist-title-format ""
+feedlist-format "%t"
