@@ -1,4 +1,4 @@
-source "gpg -d ~/.mutt/credentials.gpg |"
+source "gpg --decrypt --quiet --default-recipient-self ~/.mutt/credentials.gpg |"
 
 source ~/.mutt/muttrc-aliases
 source ~/.mutt/muttrc-bindings

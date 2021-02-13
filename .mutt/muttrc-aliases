@@ -1,5 +1,5 @@
 # The fact the alias file is encrypted breaks mutt's create-alias function
-source "gpg -d ~/.mutt/aliases.gpg |"
+source "gpg --decrypt --quiet --default-recipient-self ~/.mutt/aliases.gpg |"
 
 set sort_alias = unsorted
 set reverse_alias = yes
