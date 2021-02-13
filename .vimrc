@@ -77,7 +77,7 @@ augroup encrypted
     \ execute "doautocmd BufReadPost " . expand("%:r")
   autocmd BufWritePre,FileWritePre *.gpg
     \ setlocal bin |
-    \ '[,']!gpg --armor --encrypt --default-recipient-self --quiet
+    \ '[,']!gpg --armor --encrypt --default-recipient-self --quiet 2>/dev/null
   autocmd BufWritePost,FileWritePost *.gpg
     \ silent u |
     \ setlocal nobin
