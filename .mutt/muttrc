@@ -1,3 +1,4 @@
+echo "Decrypting credentials.gpg..."
 source "gpg --decrypt --quiet --default-recipient-self ~/.mutt/credentials.gpg |"
 
 source ~/.mutt/muttrc-aliases
