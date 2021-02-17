@@ -1,1 +1,2 @@
 alias aws='docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli'
+alias cdk='docker build -q -t ubuntu_20-04_cdk ~/.yokomizor_dotfiles/.docker-images/ubuntu_20-04_cdk && docker run --rm -it -v ~/.aws:/home/user1/.aws -v $PWD:/workdir ubuntu_20-04_cdk'
