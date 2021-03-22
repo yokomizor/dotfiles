@@ -1,0 +1,8 @@
+URxvt.background: #000000
+URxvt.foreground: #FFFFFF
+URxvt.font: xft:Monospace-Regular:pixelsize=14:antialias=true
+URxvt.boldFont: xft:Monospace-Bold:pixelsize=14:antialias=true
+URxvt.italicFont: xft:Monospace-Italic:pixelsize=14:antialias=true
+URxvt.scrollBar: false
+URxvt.perl-ext-common: fullscreen
+URxvt.keysym.F11: perl:fullscreen:switch
