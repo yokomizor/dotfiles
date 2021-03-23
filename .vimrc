@@ -1,5 +1,6 @@
 "Syntax highlighting
 syntax enable
+set background=dark
 
 "Enable filetype plugin
 filetype plugin indent on
