@@ -6,6 +6,8 @@ URxvt.italicFont: xft:Monospace-Italic:pixelsize=14:antialias=true
 URxvt.scrollBar: false
 URxvt.perl-ext-common: fullscreen
 URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 
 *.color12: #00789C
 *.color4: #3477ab
