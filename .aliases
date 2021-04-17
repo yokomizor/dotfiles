@@ -1,3 +1,4 @@
 alias aws='docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli'
 alias cdk='docker build -q -t ubuntu_20-04_cdk ~/.yokomizor_dotfiles/.docker-images/ubuntu_20-04_cdk && docker run --rm -it -v ~/.aws:/home/user1/.aws -v $PWD:/workdir ubuntu_20-04_cdk'
 alias pdflatex='docker build -q -t ubuntu_20-04_pdflatex ~/.yokomizor_dotfiles/.docker-images/ubuntu_20-04_pdflatex && docker run --rm -it -v $PWD:/workdir ubuntu_20-04_pdflatex'
+alias dockernotary="notary -s https://notary.docker.io -d ~/.docker/trust"
