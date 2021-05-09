@@ -1,3 +1,15 @@
+"Plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source ~/.vimrc
+endif
+
+"Plugins
+call plug#begin()
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'preservim/nerdtree'
+call plug#end()
+
 "Syntax highlighting
 syntax enable
 set background=dark
