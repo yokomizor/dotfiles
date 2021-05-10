@@ -1,3 +1,11 @@
+"General
+set encoding=utf-8
+set hidden
+set shortmess+=c
+set signcolumn=yes
+set updatetime=300
+set cmdheight=2
+
 "Plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -10,9 +18,12 @@ call plug#begin()
   Plug 'preservim/nerdtree'
 call plug#end()
 
+"Colors
+set background=dark
+"hi Pmenu ctermbg=white ctermfg=black
+
 "Syntax highlighting
 syntax enable
-set background=dark
 
 "Enable filetype plugin
 filetype plugin indent on
@@ -24,6 +35,7 @@ au FileType erb setl sw=4 sts=4 et
 au FileType html setl sw=2 sts=2 et
 au FileType javascript setl sw=2 sts=2 et
 au FileType typescript setl sw=2 sts=2 et
+au FileType json setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
 au FileType scss setl sw=4 sts=4 et
 au FileType jsp setl sw=4 sts=4 et
@@ -60,16 +72,6 @@ set relativenumber
 
 "Ignore case in the search
 set ignorecase
-
-"Disable arrow keys
-noremap <Up> <nop>
-inoremap <Up> <nop>
-noremap <Down> <nop>
-inoremap <Down> <nop>
-noremap <Left> <nop>
-inoremap <Left> <nop>
-noremap <Right> <nop>
-inoremap <Right> <nop>
 
 "Shortcuts
 map <C-k> :NERDTreeFromBookmark 
