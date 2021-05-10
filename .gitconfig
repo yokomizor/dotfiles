@@ -1,5 +1,15 @@
 [user]
 	email = "me@ro.ger.io"
 	name = "Rogério da Silva Yokomizo"
+
 [commit]
-	gpgsign = true
+	gpgSign = true
+
+[tag]
+	gpgSign = true
+
+[log]
+	showSignature = true
+
+[format]
+	pretty = "fuller"
