@@ -29,6 +29,7 @@ syntax enable
 filetype plugin indent on
 
 "Indentation behavior by file type
+au FileType cpp setl sw=4 sts=4 et
 au FileType python setl sw=4 sts=4 et
 au FileType ruby setl sw=2 sts=2 et
 au FileType erb setl sw=4 sts=4 et
