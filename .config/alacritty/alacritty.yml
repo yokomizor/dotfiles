@@ -1,0 +1,6 @@
+shell:
+  program: /bin/sh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
