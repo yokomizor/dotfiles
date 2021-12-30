@@ -222,5 +222,6 @@ bar {
 }
 
 exec alacritty
+for_window [app_id="Alacritty"] fullscreen enable
 
 include /etc/sway/config.d/*
