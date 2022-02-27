@@ -1,6 +1,10 @@
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/Android/Sdk/platform-tools:$PATH"
+
+export ANDROID_HOME="$HOME/Android/Sdk"
+export ANDROID_NDK_HOME="$ANDROID_HOME/ndk-bundle"
 
 export EDITOR=vim
 export PAGER=less
