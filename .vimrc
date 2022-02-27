@@ -14,13 +14,17 @@ endif
 
 "Plugins
 call plug#begin()
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'preservim/nerdtree'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
 call plug#end()
 
 "Colors
 set background=dark
 "hi Pmenu ctermbg=white ctermfg=black
+"hi CocFloat ctermfg=black
+"hi CocHintFloat ctermfg=black
 
 "Syntax highlighting
 syntax enable
@@ -35,7 +39,9 @@ au FileType ruby setl sw=2 sts=2 et
 au FileType erb setl sw=4 sts=4 et
 au FileType html setl sw=2 sts=2 et
 au FileType javascript setl sw=2 sts=2 et
+au FileType javascriptreact setl sw=2 sts=2 et
 au FileType typescript setl sw=2 sts=2 et
+au FileType typescriptreact setl sw=2 sts=2 et
 au FileType json setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
 au FileType scss setl sw=4 sts=4 et
