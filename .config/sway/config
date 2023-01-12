@@ -229,5 +229,7 @@ bar {
 
 exec xrdb -merge < ~/.Xresources
 exec alacritty
+exec /usr/libexec/pipewire-launcher
+exec /usr/libexec/xdg-desktop-portal-wlr
 
 include /etc/sway/config.d/*
